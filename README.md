@@ -22,7 +22,7 @@ Entre las Herramientas se encuentran:
 
 ## Procesos
 
-## Generar la Base de Datos: Se usaran todos los datos propuestos a excepcion del propuesto para la carga incremental.
+### Generar la Base de Datos: Se usaran todos los datos propuestos a excepcion del propuesto para la carga incremental.
 
 *    En este proceso se tomaran los archivos de Producto y Sucursal y se añadiran a un archivo .db generado 
     (Si la carpeta de Salida contiene un archivo .db lo borrara y generara uno nuevo), luego de generadas las tablas procesara todos los archivos de precio, detectando automaticamente la fecha y dejando en la tabla final de precio el ultimo precio conocido para la sucursal y el producto, junto con la fecha de la que se tomo.
