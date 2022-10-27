@@ -67,3 +67,21 @@ Entre las Herramientas se encuentran:
        Se deben seguir las mismas normas expuestas arriba para la carga de archivos de Precios.
        Poner en la Carpeta DB el archivo con nombre 'DataBase.db', el cual sera sobreescrito al finalizar el proceso.
        En Caso de fallo de una tarea siempre se debe disponer de un Backup del archivo .db, restaurar el backup cada vez que se corra el proceso.
+
+
+## Salida
+
+### Tabla
+<img src="_src\assets\Tabla.png"  height="500">
+<br/>
+<br/>
+<br/>
+
+### Consulta Requerida
+<img src="_src\assets\Consulta_1.png"  height="500">
+<br/>
+<br/>
+<br/>
+
+### Consulta Bonus
+<img src="_src\assets\Consulta_2.png"  height="500">
