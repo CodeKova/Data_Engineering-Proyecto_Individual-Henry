@@ -1,0 +1,36 @@
+[2022-10-27 19:26:37,153] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Carga_Incremental_DB.Unificar_precios_Sobreescribir_fecha_mas_reciente manual__2022-10-27T19:25:23.755318+00:00 [queued]>
+[2022-10-27 19:26:37,164] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Carga_Incremental_DB.Unificar_precios_Sobreescribir_fecha_mas_reciente manual__2022-10-27T19:25:23.755318+00:00 [queued]>
+[2022-10-27 19:26:37,164] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-27 19:26:37,167] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-10-27 19:26:37,167] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-27 19:26:37,180] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): Unificar_precios_Sobreescribir_fecha_mas_reciente> on 2022-10-27 19:25:23.755318+00:00
+[2022-10-27 19:26:37,184] {standard_task_runner.py:52} INFO - Started process 403 to run task
+[2022-10-27 19:26:37,187] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Carga_Incremental_DB', 'Unificar_precios_Sobreescribir_fecha_mas_reciente', 'manual__2022-10-27T19:25:23.755318+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/Carga_Incremental.py', '--cfg-path', '/tmp/tmp4g46fhm_', '--error-file', '/tmp/tmp98qxv2yg']
+[2022-10-27 19:26:37,188] {standard_task_runner.py:80} INFO - Job 89: Subtask Unificar_precios_Sobreescribir_fecha_mas_reciente
+[2022-10-27 19:26:37,254] {task_command.py:371} INFO - Running <TaskInstance: Carga_Incremental_DB.Unificar_precios_Sobreescribir_fecha_mas_reciente manual__2022-10-27T19:25:23.755318+00:00 [running]> on host 99c9152f3686
+[2022-10-27 19:26:37,324] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Carga_Incremental_DB
+AIRFLOW_CTX_TASK_ID=Unificar_precios_Sobreescribir_fecha_mas_reciente
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-27T19:25:23.755318+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-27T19:25:23.755318+00:00
+[2022-10-27 19:31:35,825] {python.py:173} INFO - Done. Returned value was:         sucursal_id    producto_id  precio actualizado
+0            1-1-12  0000042096276  908.10  2022-08-28
+1            1-1-12  0000042126560  160.90  2020-05-18
+2            1-1-12  0000042231301  160.90  2020-05-18
+3            1-1-12  0000042231486  215.50  2020-05-18
+4            1-1-12  0000042231509  184.90  2020-05-18
+...             ...            ...     ...         ...
+1289878     9-3-628  7891150035881  329.00  2020-04-13
+1289879     9-3-628  7891150040182   50.00  2020-04-13
+1289880     9-3-628  7891167011755  200.00  2020-04-13
+1289881     9-3-628  7891962036861  451.00  2020-04-13
+1289882     9-3-628  7896016105036   20.14  2020-04-13
+
+[1282244 rows x 4 columns]
+[2022-10-27 19:31:41,338] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=Carga_Incremental_DB, task_id=Unificar_precios_Sobreescribir_fecha_mas_reciente, execution_date=20221027T192523, start_date=20221027T192637, end_date=20221027T193141
+[2022-10-27 19:31:41,388] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-27 19:31:41,417] {local_task_job.py:273} INFO - 3 downstream tasks scheduled from follow-on schedule check

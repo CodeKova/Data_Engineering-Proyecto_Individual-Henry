@@ -1,0 +1,23 @@
+[2022-10-27 19:31:43,028] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Carga_Incremental_DB.DB_Generar_Tabla_Precio manual__2022-10-27T19:25:23.755318+00:00 [queued]>
+[2022-10-27 19:31:43,038] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Carga_Incremental_DB.DB_Generar_Tabla_Precio manual__2022-10-27T19:25:23.755318+00:00 [queued]>
+[2022-10-27 19:31:43,038] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-27 19:31:43,039] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-10-27 19:31:43,039] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-27 19:31:43,052] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): DB_Generar_Tabla_Precio> on 2022-10-27 19:25:23.755318+00:00
+[2022-10-27 19:31:43,058] {standard_task_runner.py:52} INFO - Started process 647 to run task
+[2022-10-27 19:31:43,061] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'Carga_Incremental_DB', 'DB_Generar_Tabla_Precio', 'manual__2022-10-27T19:25:23.755318+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/Carga_Incremental.py', '--cfg-path', '/tmp/tmpsd88b5a_', '--error-file', '/tmp/tmpknu45is_']
+[2022-10-27 19:31:43,062] {standard_task_runner.py:80} INFO - Job 91: Subtask DB_Generar_Tabla_Precio
+[2022-10-27 19:31:43,122] {task_command.py:371} INFO - Running <TaskInstance: Carga_Incremental_DB.DB_Generar_Tabla_Precio manual__2022-10-27T19:25:23.755318+00:00 [running]> on host 99c9152f3686
+[2022-10-27 19:31:43,195] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Carga_Incremental_DB
+AIRFLOW_CTX_TASK_ID=DB_Generar_Tabla_Precio
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-27T19:25:23.755318+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-27T19:25:23.755318+00:00
+[2022-10-27 19:32:20,440] {python.py:173} INFO - Done. Returned value was: None
+[2022-10-27 19:32:20,451] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=Carga_Incremental_DB, task_id=DB_Generar_Tabla_Precio, execution_date=20221027T192523, start_date=20221027T193143, end_date=20221027T193220
+[2022-10-27 19:32:20,499] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-27 19:32:20,521] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
