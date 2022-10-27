@@ -118,7 +118,7 @@ def leer_precios(**context): #Funcion para leer los archivos de precios listados
                 df = xlt.parse(hoja)
     
                 #Normalizamos
-                df['producto_id'] = df['producto_id'].apply(lambda x: int(x[-13:]) if(type(x) == str) else x)
+                df['producto_id'] = df['producto_id'].apply(lambda x: int(float(x[-13:])) if(type(x) == str) else x)
                 df['sucursal_id'] = df['sucursal_id'].apply(lambda x: ('{0}-{1}-{2}'.format(int(x.day),int(x.month),int(x.year))) if(str(type(x)) == "<class 'datetime.datetime'>") else x)
                 df['sucursal_id'] = df['sucursal_id'].apply(lambda x: str(x))
                 df['producto_id'] = df['producto_id'].fillna(int(0)).apply(lambda x: str(str(int(float(x))).zfill(13)))
